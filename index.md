@@ -5,10 +5,10 @@ layout: layout.html
 # Books
 
 <ul>
-{%- for post in collections.post reversed -%}
+{%- for book in collections.book reversed -%}
   <li>
-    <a href="{{post.url}}">
-      {{ post.data.title}}
+    <a href="{{book.url}}">
+      {{ book.data.title }}
     </a>
   </li>
 {%- endfor -%}
